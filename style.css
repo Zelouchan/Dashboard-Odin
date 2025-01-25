@@ -8,8 +8,6 @@
 }
 
 body {
-  /* width: 100vw; */
-  /* height: 100%; */
   padding: 0;
   margin: 0;
 }
@@ -43,6 +41,12 @@ nav > div {
   justify-content: start;
   align-items: center;
   gap: 4%;
+}
+
+nav > div:hover {
+  font-weight: bold;
+  color: var(--colour1);
+  cursor: pointer;
 }
 
 #dashboard {
@@ -89,14 +93,12 @@ header {
     "icon name";
   font-weight: bold;
   padding: 1% 0% 0% 50px;
-  
 }
 
 .hi {
   grid-area: hi;
   font-size: 15px;
   margin-top: 3px;
-
 }
 
 .icon {
