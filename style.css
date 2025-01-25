@@ -32,16 +32,18 @@ nav {
     display: grid;
     background-color: var(--colourblue);
     grid-template-columns: 1fr;
-    grid-template-rows: 10% repeat(10, 7%);   
+    grid-template-rows: 10% repeat(10, 8%);   
 }
 
 nav > div {
     color: white;
     padding: 0% 4%;
-    /* border: 2px solid white; */
+    border: 2px solid white;
     font-size: 0.8rem;
-    justify-content: center; 
-    align-content: center;
+    display: flex;
+    justify-content: start; 
+    align-items: center;
+    gap: 4%;
 }
 
 #dashboard {
