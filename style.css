@@ -1,0 +1,51 @@
+:root {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "nav header header"
+    "nav projects rSide"
+    "nav projects rSide";
+    height: 100%;
+    width: 100%;
+}
+
+nav {
+    grid-area: nav;
+    border: 2px solid black;
+    height: 100%;
+}
+
+nav > div {
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: 13fr;
+}
+
+header {
+    grid-area: header;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 2fr;
+}
+
+.projects {
+    grid-area: projects;
+    border: 2px solid black;
+}
+
+.rSide {
+    grid-area: rSide;
+    border: 2px solid black;
+}
+
