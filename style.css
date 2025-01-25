@@ -1,13 +1,18 @@
 :root {
     font-family: 'Courier New', Courier, monospace;
+    --colour1: yellow;
+    --colourblue: blue;
 }
 
 body {
     width: 100vw;
     height: 100vh;
+    padding: 0;
+    margin: 0;
 }
 
 .container {
+    margin: 0;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -22,13 +27,12 @@ body {
 nav {
     grid-area: nav;
     border: 2px solid black;
-    height: 100%;
+    display: grid;
+    background-color: var(--colourblue);
 }
 
 nav > div {
     border: 2px solid black;
-    display: grid;
-    grid-template-rows: 13fr;
 }
 
 header {
@@ -42,6 +46,25 @@ header {
 .projects {
     grid-area: projects;
     border: 2px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10px repeat(3, 1fr);
+    font-size: 10px;
+    background-color: gray;
+}
+
+.textbox {
+    padding: 2% 2% 2% 5%;
+    margin: 5%;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px grey;
+    box-shadow: inset 5px 0 0 0 var(--colour1);
+    background-color: white;
+}
+
+.title {
+    grid-column: 2 span;
 }
 
 .rSide {
